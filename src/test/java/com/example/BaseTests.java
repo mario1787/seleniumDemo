@@ -20,6 +20,7 @@ public class BaseTests {
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
             options.addArguments("--headless");
+	    options.addArguments("--remote-allow-origins=*");
 	    driver = new ChromeDriver(options);
 	    driver.manage().window().maximize();
 	    driver.get("https://opensource-demo.orangehrmlive.com/");	    
